@@ -139,13 +139,9 @@ void findSalesByCustomer(string customersearch)
             cout << transactionNo[i] << setw(15) << cookieType[i] << setw(15) << quantitySold[i] << setw(20) << "RM" << pricePerUnit[i] << setw(10) << customerName[i] << endl;
         }
     }
-    for (int i = 0; i < 100; i++)
-    {
-        cout << line;
-    }
     if (!foundcustomer)
     {
-        cout << " No sales record for customer :" << customerName << "\n"
+        cout << " \n  No sales record for customer :" << customerName << "\n"
              << endl;
     }
 }
