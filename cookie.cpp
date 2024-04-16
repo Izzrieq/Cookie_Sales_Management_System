@@ -1,19 +1,24 @@
+// library declaration
 #include <iostream>
 #include <string>
+// for table width (setw)
 #include <iomanip>
 using namespace std;
 
+// set max array
 const int MAX = 50;
 
 // to create line as table border
 char line = '=';
 
+// array declaration
 int transactionNo[MAX];
 int quantitySold[MAX];
 double pricePerUnit[MAX];
 string cookieType[MAX];
 string customerName[MAX];
 
+// set count back to 0
 int countTransaction = 0;
 
 //[1]recordsales function start
@@ -25,6 +30,7 @@ void recordSales()
         // User start enter detail about customer
         cout << "Transaction No: ";
         cin >> transactionNo[countTransaction];
+        // to check the transactionNo not less than 0
         if (transactionNo[countTransaction] < 0)
         {
             cout << "Transaction No must be greater than 0 \n";
@@ -114,6 +120,7 @@ void displaySalesRecords()
 //[3]displaysalesrecords function end
 
 //[4]displaysalesrecords function start
+// pass parameter
 void findSalesByCustomer(string customersearch)
 {
     cout << "Sales Records for Customer " << customersearch << ":" << endl;
@@ -181,7 +188,9 @@ void updateSalesRecord(int updatetrans)
 
 int main()
 {
+
     int choice;
+
     // using do while loop to achive system that will ask user to choose the option until user hit number '6'
     do
     {
