@@ -130,6 +130,7 @@ void findSalesByCustomer(string customersearch)
         cout << line;
     }
     cout << "\n";
+    // function start to search for customername
     bool foundcustomer = false;
     for (int i = 0; i < countTransaction; i++)
     {
