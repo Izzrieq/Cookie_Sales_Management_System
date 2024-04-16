@@ -8,6 +8,12 @@ using namespace std;
 // set max array
 const int MAX = 50;
 
+/*
+[1]Illhan 101
+[2]Niko 102
+[3]Izz 103
+*/
+
 // to create line as table border
 char line = '=';
 
@@ -60,6 +66,8 @@ void recordSales()
 
         cout << "Customer Name: ";
         getline(cin, customerName[countTransaction]);
+
+        // auto increment for countTransaction
         countTransaction++;
         // enter customer details end
     }
@@ -236,6 +244,7 @@ int main()
             cin >> updatetrans;
             // using transactionNo = updatetrans to achive updatesalesrecord()
             updateSalesRecord(updatetrans);
+            // 101
         }
         break;
         case 6:
