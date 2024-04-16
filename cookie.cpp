@@ -7,6 +7,7 @@ using namespace std;
 
 // set max array
 const int MAX = 50;
+// test
 
 /*
 [1]Illhan 101
